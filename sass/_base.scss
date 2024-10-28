@@ -5,20 +5,22 @@
   padding: 0;
   box-sizing: inherit;
   //make box-sizing inheritable
-} //universal normalization: 把html element預設的但我們不想要的屬性都弄掉
+} //universal normalization
 
 html {
   font-size: 62.5%;
   //defines what 1 rem is. we want 1rem=10px, and 10/16=0.625
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
-  //put a frame around the entire webpage (not viewport!)
+  background-color: $color-white;
 }
 
 ::selection {
-  background-color: $color-primary;
+  background-color: $color-gray-500;
   color: $color-white;
 }
