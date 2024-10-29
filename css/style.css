@@ -9,7 +9,8 @@ html {
   font-size: 62.5%;
   font-family: "LXGW WenKai Mono TC", monospace;
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  line-height: 1.6; }
 
 body {
   box-sizing: border-box;
@@ -19,6 +20,33 @@ body {
   background-color: #86765f;
   color: #f4f1ee; }
 
+.project__list {
+  list-style: none;
+  margin-bottom: 1rem; }
+
+.project__title {
+  font-weight: bold;
+  background-color: #cbbbad;
+  display: inline-block;
+  border-radius: 1rem; }
+
+.project__item {
+  margin-bottom: 0.5rem; }
+
+.project__detail {
+  font-size: 1.6rem;
+  color: #86765f;
+  margin-top: 3px; }
+
+.link {
+  padding: 2px;
+  border-radius: 1rem;
+  color: #3c301e;
+  transition: all 0.2s; }
+  .link:hover {
+    color: #f4f1ee;
+    background-color: #514028; }
+
 .header {
   display: grid;
   grid-template-columns: 1fr repeat(8, 12.5rem) 1fr;
@@ -26,6 +54,7 @@ body {
   .header__title {
     grid-column: 2 / 10;
     color: #514028;
+    font-size: 4.8rem;
     margin-top: 10rem;
     margin-bottom: 4rem; }
 
@@ -38,6 +67,11 @@ body {
   grid-column: 2 / 10;
   display: grid;
   grid-template-columns: repeat(8, 12.5rem); }
+
+.divider {
+  height: 2px;
+  background-color: #3c301e;
+  grid-column: 2 / 10; }
 
 .question {
   grid-column: 1 / 4;
@@ -52,8 +86,3 @@ body {
   color: #514028; }
   .answer__p {
     margin-bottom: 1rem; }
-
-.divider {
-  height: 2px;
-  background-color: #3c301e;
-  grid-column: 2 / 10; }
