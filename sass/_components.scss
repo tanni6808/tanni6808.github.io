@@ -1,16 +1,15 @@
 .group {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(8, 12.5rem);
+  margin-top: 3rem;
+  display: flex;
   &__title {
-    grid-column: 1 / 4;
+    flex-basis: 35%;
     font-size: 2.4rem;
     font-weight: bold;
     color: $color-gray-500;
-    width: 90%;
+    margin-right: 2rem;
   }
   &__content {
-    grid-column: 4 / 9;
+    flex-basis: 65%;
     font-size: 2rem;
     color: $color-gray-700;
   }
@@ -19,17 +18,18 @@
 .paragraph {
   font-size: 2rem;
   color: $color-gray-700;
+  margin-bottom: 2rem;
 }
 
 .divider {
   height: 2px;
+  margin: 0 -2rem;
   border: none;
   margin-top: 1rem;
   &--dark {
     background-color: $color-gray-500;
   }
   &--light {
-    height: 1px;
     background-color: $color-gray-100;
   }
 }

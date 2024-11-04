@@ -21,32 +21,32 @@ body {
   color: #f4f1ee; }
 
 .group {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(8, 12.5rem); }
+  margin-top: 3rem;
+  display: flex; }
   .group__title {
-    grid-column: 1 / 4;
+    flex-basis: 35%;
     font-size: 2.4rem;
     font-weight: bold;
     color: #86765f;
-    width: 90%; }
+    margin-right: 2rem; }
   .group__content {
-    grid-column: 4 / 9;
+    flex-basis: 65%;
     font-size: 2rem;
     color: #514028; }
 
 .paragraph {
   font-size: 2rem;
-  color: #514028; }
+  color: #514028;
+  margin-bottom: 2rem; }
 
 .divider {
   height: 2px;
+  margin: 0 -2rem;
   border: none;
   margin-top: 1rem; }
   .divider--dark {
     background-color: #86765f; }
   .divider--light {
-    height: 1px;
     background-color: #ebe4de; }
 
 .list {
