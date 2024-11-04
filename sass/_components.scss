@@ -1,10 +1,46 @@
-.project {
-  &__list {
-    list-style: none;
-    margin-bottom: 1rem;
+.group {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5rem);
+  &__title {
+    grid-column: 1 / 4;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-gray-500;
+    width: 90%;
   }
+  &__content {
+    grid-column: 4 / 9;
+    font-size: 2rem;
+    color: $color-gray-700;
+  }
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: $color-gray-700;
+}
+
+.divider {
+  height: 2px;
+  border: none;
+  margin-top: 1rem;
+  &--dark {
+    background-color: $color-gray-500;
+  }
+  &--light {
+    height: 1px;
+    background-color: $color-gray-100;
+  }
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 1rem;
+
   &__title {
     font-weight: bold;
+    color: $color-gray-900;
     background-color: $color-gray-300;
     display: inline-block;
     border-radius: 1rem;
@@ -22,7 +58,7 @@
 .link {
   padding: 2px;
   border-radius: 1rem;
-  color: $color-gray-900;
+  color: currentColor;
   transition: all 0.2s;
   &:hover {
     color: $color-white;
