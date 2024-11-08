@@ -65,10 +65,9 @@
           <div class="paragraph">
             最初開始學習前端工程時，我是觀看彭彭老師的Youtube教學；後來我進一步在Udemy上學習了進階的CSS及JavaScript（JS目前上完一半的課），以下是我跟著課程老師做出的一些成品。
           </div>
-
+          <div class="list__title">CSS:</div>
           <ul class="list">
-            <div class="list__title">CSS:</div>
-            <li class="list__item">
+            <li class="list__item list__item--hover">
               <a
                 href="natours/index.html"
                 class="link"
@@ -76,11 +75,11 @@
                 rel="noopener noreferrer"
                 >Natours↗</a
               >
-              <div class="list__detail">
+              <div class="list__detail list__detail--hover">
                 以float-based layouts寫成的旅遊公司入口網站。
               </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--hover">
               <a
                 href="trillo/index.html"
                 class="link"
@@ -88,9 +87,11 @@
                 rel="noopener noreferrer"
                 >Trillo↗</a
               >
-              <div class="list__detail">以flexbox寫成的訂房網站。</div>
+              <div class="list__detail list__detail--hover">
+                以flexbox寫成的訂房網站。
+              </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--hover">
               <a
                 href="nexter/index.html"
                 class="link"
@@ -98,14 +99,14 @@
                 rel="noopener noreferrer"
                 >Nexter↗</a
               >
-              <div class="list__detail">
+              <div class="list__detail list__detail--hover">
                 主要以CSS grid寫成的房地產公司網站。
               </div>
             </li>
           </ul>
           <ul class="list">
             <div class="list__title">JavaScript:</div>
-            <li class="list__item">
+            <li class="list__item list__item--hover">
               <a
                 href="guess-my-number/index.html"
                 class="link"
@@ -113,21 +114,11 @@
                 rel="noopener noreferrer"
                 >Guess My Number↗</a
               >
-              <div class="list__detail">猜數字的簡單小遊戲。</div>
-            </li>
-            <li class="list__item">
-              <a
-                href="pig-game/index.html"
-                class="link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Pig Game↗</a
-              >
-              <div class="list__detail">
-                兩位玩家擲骰子累積分數，若擲到1則分數歸零並換人，先得50分的玩家獲勝。
+              <div class="list__detail list__detail--hover">
+                猜數字的簡單小遊戲。
               </div>
             </li>
-            <li class="list__item">
+            <li class="list__item list__item--hover">
               <a
                 href="bankist-website/index.html"
                 class="link"
@@ -135,13 +126,29 @@
                 rel="noopener noreferrer"
                 >Bankist↗</a
               >
-              <div class="list__detail">
-                使用JavaScript結合CSS與使用者進行動態互動的網頁。
+              <div class="list__detail list__detail--hover">
+                使用JavaScript DOM manipulation與使用者進行動態互動的網頁。
               </div>
             </li>
           </ul>
           <div class="paragraph">
-            在上網路課程的同時，我也慢慢將所屬實驗室的舊版網頁更新，重新設計並寫出一個新的網頁：<a
+            在上網路課程的同時，我也慢慢將所屬實驗室的
+            <span class="popover">
+              <span class="popover__text">舊版網頁</span>
+              <div class="popover__content">
+                <img
+                  class="popover__img"
+                  src="img/old-vnl-1.png"
+                  alt="old website screenshot-1"
+                />
+                <img
+                  class="popover__img"
+                  src="img/old-vnl-2.png"
+                  alt="old website screensho-2"
+                />
+              </div>
+            </span>
+            更新，重新設計並寫出一個新的網頁：<a
               href="http://www.psy.ntu.edu.tw/vnl/index.html"
               class="link"
               target="_blank"
@@ -156,11 +163,9 @@
         <div class="group__title">如果參與這個訓練，會怎麼安排學習時間？</div>
         <div class="group__content">
           <div class="paragraph">
-            目前的正職工作（研究助理），我已經確定會在2025年1月底離職。雖然訓練在1月初就開始，但這份工作的出勤時間有一定的彈性，我可以參加週一早上的線上會議，且第一階段前半的內容我已有一定基礎，預期會需要的時間不會太多，可以與工作並行，在下班後花2-3小時完成每周任務。
+            目前的正職工作（研究助理），我已經確定會在2025年1月底離職。雖然訓練在1月初就開始，但這份工作的出勤時間有一定的彈性，我可以參加週一早上的線上會議，且第一階段前半的內容我已有一定基礎，預期需要的時間不會太多，可以與工作並行，在下班後花2-3小時完成每周任務。
           </div>
-          <div class="paragraph">
-            從2月初開始我就可以全職投入訓練。我計畫每日
-          </div>
+          <div class="paragraph">從2月開始我就能全職投入訓練。我計畫每日</div>
         </div>
       </div>
       <hr class="divider divider--light" />
@@ -170,7 +175,10 @@
         </div>
         <div class="group__content">
           <div class="paragraph">
-            我認為在投入前，必須釐清自己的目標及需求，並且預定一個回顧的時間。投入後，回顧投入的成果能否達成此目標，如果可以就繼續往下一步，如果未能達標，便應該開始思考是因為投入了錯誤的領域，還是其他因素導致回報不如預期。
+            我認為在投入前，必須釐清自己的目標及需求，並且預定一個短期（三個月以內）能達成的目標。投入後，在預計的時限內回顧投入的成果能否達成了短期目標，如果順利達成，表示至少此階段方向正確，可以同樣的流程繼續深入；如果未能達標，便應該開始思考是否投入了錯誤的領域。
+          </div>
+          <div class="paragraph">
+            在這樣的流程中，我覺得最困難的是確立目標及需求的部分。尤其是在想要投入較為陌生的領域時，很容易誤判目標訂定的方向及難易程度。不過現在有很多管道可以得到相關資訊幫助我們判斷，像是各種blog、youtube上的經驗分享，或是問chatGPT。就算真的誤判了，也已經設下了三個月的停損點。
           </div>
         </div>
       </div>
@@ -181,10 +189,10 @@
         </div>
         <div class="group__content">
           <div class="paragraph">
-            曾經有一次的logo設計委託，委託方的要求有點難達成，我花費不少時間蒐集靈感及相關資料，好不容易完成一個十分滿意的設計，在交給接洽人後也得到了他的正面反饋，但是一周後卻收到了「委託方很不喜歡這個設計」的回覆，並詳細附上了他們對這個設計不滿的地方。
+            我第一次接到比較正式的logo設計委託時，由於委託方的要求有點難達成，我設計logo的經驗也不多，花費不少時間蒐集靈感及相關資料，好不容易完成了一個十分滿意的設計。在交給接洽人後得到了他的正面反饋，當我以為一切順利的時候，卻收到了「委託方很不喜歡這個設計」的回覆，並詳細附上了他們對這個設計不滿的地方。
           </div>
           <div class="paragraph">
-            剛收到回覆的當下我既震驚又難過，覺得自己被很用力地否定了。在閱讀委託方附註的不滿時，我忍不住在心裡一一提出反駁。不過這也使我察覺到，自己正在讓情緒主導自己面對反對意見。我決定讓自己冷靜一下，先把它放一邊，去聽一下喜歡的音樂，當我覺得自己已經平靜下來之後，我將那則回覆複製了一份，把裡面關於個人喜好的詞彙都刪除，只留下客觀的描述，然後盡我所能地用第三方的觀點，逐一檢視委託方所提出的問題是否確實存在。在經過這樣的檢視後，我也認為對方所點出的問題確實是我當初並未考慮到的；此外，對方不僅僅只是提出要求更改的地方，也有提供更改的方向，這對我而言是非常有用的資訊。之後，我很順利地將原本的設計修改成了讓委託方滿意的版本。
+            剛收到回覆的當下我既震驚又難過，覺得自己被很用力地否定了。在閱讀委託方附註的不滿時，我一方面在心裡一一提出反駁，另一方面卻也不得不承認對方指出的問題確實存在，這使我在生氣之餘也對自己失去了信心。但當我意識到自己的情緒變得很糟時，我決定讓自己冷靜一下，先把它放一邊，聽著喜歡的音樂運動一下再洗個澡；平靜下來之後，我也想起這並不是我用來表現自己的作品，而是一個需要滿足委託方要求的產品。於是我將那則回覆複製了一份，把裡面關於個人喜好的詞彙都刪除，只留下客觀的描述，這樣一來，這些我原本認為不友善的反對意見就成為了明確的修改目標。之後，我順利地將原本的設計修改出幾個不同版本，最終也完成了讓對方滿意的logo。
           </div>
         </div>
       </div>
@@ -202,7 +210,7 @@
         </div>
         <div class="group__content">
           <div class="paragraph">
-            我認為這份連結關係是構成人類社會的基礎。現代人已經不可能只靠自己活下去了，我們的生活中充滿了他人工作的成果。
+            我覺得這段連結是一種供需關係。現代社會中，人們仰賴他人工作的成果生存，社會需要人們工作來得到持續運作的動力，這份連結使社會的需求從個人的供給得到滿足；同時也是個人從社會中獲取、滿足自己不同層面需求的途徑之一。舉例而言，薪資能滿足生理及安全需求，公司團隊能滿足愛與歸屬需求及尊重需求，從工作中得到的成就感能滿足自我實現需求。
           </div>
         </div>
       </div>
