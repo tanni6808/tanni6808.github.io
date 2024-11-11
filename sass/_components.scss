@@ -59,7 +59,7 @@
     margin-top: 3px;
     &--hover {
       color: $color-gray-700;
-      display: none;
+      // display: none;
       margin-left: 2rem;
       padding: 1px 10px;
       border-style: solid;
@@ -77,9 +77,11 @@
     }
   }
 }
-.list__item--hover:hover .list__detail--hover {
-  display: flex;
-}
+
+// list_detail hover effect
+// .list__item--hover:hover .list__detail--hover {
+//   display: flex;
+// }
 
 .link {
   padding: 2px;
@@ -95,34 +97,39 @@
 .popover {
   position: relative;
   &__text {
+    cursor: pointer;
     margin: 0 -10px;
     border-style: solid;
     border-width: 0.5rem;
     border-radius: 1rem;
     border-color: $color-gray-300;
+    transition: all 0.3s;
   }
   &__content {
+    // width: 65rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
     text-align: center;
     position: absolute;
     z-index: 10;
     opacity: 0;
     visibility: hidden;
     background-color: $color-gray-300;
+    transform: translate(0, -5rem);
     transition: all 0.3s;
   }
   &__img {
-    width: 50rem;
+    width: 100%;
   }
 }
 
 .popover:hover .popover__content {
   opacity: 1;
   visibility: visible;
-  border-radius: 1rem 1rem 0 0;
+  transform: translate(0, 0);
 }
 
 .popover:hover .popover__text {
+  background-color: $color-gray-300;
   border-radius: 1rem 1rem 0 0;
 }
