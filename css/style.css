@@ -70,6 +70,7 @@ body {
     margin-top: 3px; }
     .list__detail--hover {
       color: #514028;
+      display: none;
       margin-left: 2rem;
       padding: 1px 10px;
       border-style: solid;
@@ -85,7 +86,7 @@ body {
         transform: translate(-25px, 3px); }
 
 .list__item--hover:hover .list__detail--hover {
-  border-color: #86765f; }
+  display: flex; }
 
 .link {
   padding: 2px;

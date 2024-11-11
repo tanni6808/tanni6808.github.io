@@ -59,7 +59,7 @@
     margin-top: 3px;
     &--hover {
       color: $color-gray-700;
-      // display: none;
+      display: none;
       margin-left: 2rem;
       padding: 1px 10px;
       border-style: solid;
@@ -78,7 +78,7 @@
   }
 }
 .list__item--hover:hover .list__detail--hover {
-  border-color: $color-gray-500;
+  display: flex;
 }
 
 .link {
