@@ -51,7 +51,7 @@ body {
 
 .list {
   list-style: none;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
   .list__title {
     font-weight: bold;
     color: #3c301e;
