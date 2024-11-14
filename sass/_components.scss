@@ -1,6 +1,9 @@
 .group {
   margin-top: 3rem;
   display: flex;
+  &:last-child {
+    margin-bottom: 10rem;
+  }
   &__title {
     flex-basis: 35%;
     font-size: 2.4rem;
@@ -47,39 +50,39 @@
   }
   &__item {
     margin-bottom: 0.5rem;
-    &--hover {
-      position: relative;
-      display: flex;
-      width: fit-content;
-    }
+    position: relative;
+    display: flex;
+    width: fit-content;
   }
   &__detail {
     font-size: 1.6rem;
     color: $color-gray-500;
     margin-top: 3px;
-    &--hover {
-      color: $color-gray-700;
-      // display: none;
-      margin-left: 2rem;
-      padding: 1px 10px;
+    color: $color-gray-700;
+    // display: none;
+    margin-left: 2rem;
+    padding: 1px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 1rem;
+    border-color: $color-gray-300;
+    &::before {
+      content: "";
+      position: absolute;
       border-style: solid;
-      border-width: 3px;
-      border-radius: 1rem;
-      border-color: $color-gray-300;
-      &::before {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent $color-gray-300 transparent transparent;
-        transform: translate(-25px, 3px);
-      }
+      border-width: 10px 10px 10px 0;
+      border-color: transparent $color-gray-300 transparent transparent;
+      transform: translate(-25px, 3px);
+    }
+    &--hover {
+      position: absolute;
+      z-index: 1;
     }
   }
 }
 
 // list_detail hover effect
-// .list__item--hover:hover .list__detail--hover {
+// .list__item:hover .list__detail {
 //   display: flex;
 // }
 
@@ -132,4 +135,79 @@
 .popover:hover .popover__text {
   background-color: $color-gray-300;
   border-radius: 1rem 1rem 0 0;
+}
+
+.copyright {
+  padding-top: 4rem;
+  color: $color-gray-100;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.code {
+  display: inline-block;
+  color: $color-gray-900;
+  background-color: $color-code-bg;
+  font-size: 1.5rem;
+  padding: 1px 10px;
+  border-radius: 1rem;
+  transform: translateY(-1px);
+  &--multi {
+    display: block;
+    padding: 2rem;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  padding: 2rem;
+  &--right {
+    // &:hover::after {
+    //   content: "border-width: 12px 0 12px 12px; \00000a border-color: transparent transparent transparent $color-gray-300;";
+    //   width: max-content;
+    //   white-space: pre;
+    //   background-color: $color-code-bg;
+    //   font-size: 12px;
+    //   position: absolute;
+    //   z-index: 1;
+    // }
+    &::after {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 12px 0 12px 12px;
+      border-color: transparent transparent transparent $color-gray-300;
+      transform: translate(6px, 4px);
+    }
+  }
+  &--top-left {
+    &::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 12px 12px 12px 0;
+      border-color: $color-gray-300 transparent transparent transparent;
+      transform: translate(-5px, -3px);
+    }
+  }
+  &--big {
+    &::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 20px 20px 20px 0;
+      border-color: transparent $color-gray-300 transparent transparent;
+      transform: translate(-24px, -5px);
+    }
+  }
+  &--small {
+    &::after {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: $color-gray-300 transparent transparent transparent;
+      transform: translate(-24px, 28px);
+    }
+  }
 }
