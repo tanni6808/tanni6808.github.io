@@ -11,10 +11,16 @@ html {
   font-weight: 400;
   font-style: normal;
   line-height: 1.6; }
+  @media (max-width: 1100px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
   background-color: #f4f1ee; }
+  @media (max-width: 900px) {
+    body {
+      padding: 0 5rem; } }
 
 ::selection {
   background-color: #86765f;
@@ -31,10 +37,16 @@ body {
     font-weight: bold;
     color: #86765f;
     margin-right: 2rem; }
+    @media (max-width: 900px) {
+      .group__title {
+        margin-bottom: 2rem; } }
   .group__content {
     flex-basis: 65%;
     font-size: 2rem;
     color: #514028; }
+  @media (max-width: 900px) {
+    .group {
+      flex-direction: column; } }
 
 .paragraph {
   font-size: 2rem;
@@ -117,6 +129,14 @@ body {
     background-color: #cbbbad;
     transform: translate(0, -5rem);
     transition: all 0.3s; }
+    @media (max-width: 900px) {
+      .popover__content {
+        width: 65rem;
+        border-radius: 1rem 1rem 1rem 1rem; } }
+    @media (max-width: 600px) {
+      .popover__content {
+        width: 30rem;
+        margin: 0 auto; } }
   .popover__img {
     width: 100%; }
 
@@ -195,3 +215,6 @@ body {
 .footer {
   height: 10rem;
   background-color: #86765f; }
+  @media (max-width: 900px) {
+    .footer {
+      margin: 0 -5rem; } }

@@ -10,11 +10,18 @@
     font-weight: bold;
     color: $color-gray-500;
     margin-right: 2rem;
+    @media (max-width: 900px) {
+      margin-bottom: 2rem;
+    }
   }
   &__content {
     flex-basis: 65%;
     font-size: 2rem;
     color: $color-gray-700;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
   }
 }
 
@@ -109,7 +116,6 @@
     transition: all 0.3s;
   }
   &__content {
-    // width: 65rem;
     padding: 2rem;
     border-radius: 1rem 0 1rem 1rem;
     text-align: center;
@@ -120,6 +126,14 @@
     background-color: $color-gray-300;
     transform: translate(0, -5rem);
     transition: all 0.3s;
+    @media (max-width: 900px) {
+      width: 65rem;
+      border-radius: 1rem 1rem 1rem 1rem;
+    }
+    @media (max-width: 600px) {
+      width: 30rem;
+      margin: 0 auto;
+    }
   }
   &__img {
     width: 100%;

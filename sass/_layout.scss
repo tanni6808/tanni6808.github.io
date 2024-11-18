@@ -17,4 +17,7 @@
 .footer {
   height: 10rem;
   background-color: $color-gray-500;
+  @media (max-width: 900px) {
+    margin: 0 -5rem;
+  }
 }
