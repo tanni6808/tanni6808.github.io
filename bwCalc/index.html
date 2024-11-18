@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BW Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>BW Calculator</h1>
+    </header>
+    <main>
+      <form class="form">
+        <div class="form__row">
+          <label class="form__label">會員等級：</label>
+          <select class="form__input form__input--rank">
+            <!-- <option value="0">請選擇</option> -->
+            <option value="1">無等級(ランクなし) / coin回饋率1%</option>
+            <option value="3">Light(ライト) / coin回饋率3%</option>
+            <option value="5">Regular(レギュラー) / coin回饋率5%</option>
+            <option value="8">Jack(ジャック) / coin回饋率8%</option>
+          </select>
+        </div>
+      </form>
+      <form class="form form__book">
+        <div class="form__row">
+          <label for="price" class="form__label">單價：</label>
+          <input
+            type="number"
+            class="form__input form__input--price"
+            placeholder="円"
+            id="price"
+          />
+        </div>
+        <div class="form__row">
+          <label for="num" class="form__label" placeholder="本">數量：</label>
+          <input
+            type="number"
+            class="form__input form__input--num"
+            placeholder="本"
+            id="num"
+            value="1"
+          />
+        </div>
+        <div class="form__row">
+          <label class="form__label">優惠回饋率：</label>
+          <select class="form__input form__input--promote">
+            <option value="0">無</option>
+            <option value="15">15%</option>
+            <option value="50">50%</option>
+          </select>
+        </div>
+        <div class="from__row">
+          <button class="btn btn--add-book">新增</button>
+        </div>
+      </form>
+
+      <ul class="books">
+        <!-- <li class="book">
+          <div class="book__details">
+            單價：
+            <span class="book__value">560</span>
+            円
+          </div>
+          <div class="book__details">
+            數量：
+            <span class="book__value">1</span>
+            本
+          </div>
+          <div class="book__details">
+            回饋率：
+            <span class="book__value">50</span>
+            %
+          </div>
+        </li>-->
+        <button class="btn--calc hidden">計算</button>
+      </ul>
+      <ul class="results">
+        <!-- <li class="result">
+          第
+          <span class="result__buy">1</span>
+          次購買
+          <div class="result__detail">
+            <div class="result__price">560円</div>
+            <div class="result__price">560円</div>
+          </div>
+        </li>
+        <li class="result">
+          第
+          <span class="result__buy">2</span>
+          次購買
+          <div class="result__detail">
+            <div class="result__price">560円</div>
+          </div>
+        </li>-->
+      </ul>
+      <div><button class="btn--reload">重新開始</button></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

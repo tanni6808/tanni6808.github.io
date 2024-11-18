@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form__book {
+  display: inline-block;
+  padding: 5px;
+  border-style: dashed;
+  border-width: 3px;
+}
+
+.book {
+  margin-bottom: 8px;
+}
+
+.result {
+  margin-bottom: 8px;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
