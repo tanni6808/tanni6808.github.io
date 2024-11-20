@@ -212,6 +212,12 @@ body {
   margin: 0 auto;
   max-width: 100rem; }
 
+.indent {
+  margin-left: 2rem; }
+
+.comment {
+  color: #86765f; }
+
 .footer {
   height: 10rem;
   background-color: #86765f; }

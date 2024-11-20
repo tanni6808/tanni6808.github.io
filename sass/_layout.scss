@@ -14,6 +14,13 @@
   max-width: 100rem;
 }
 
+.indent {
+  margin-left: 2rem;
+}
+.comment {
+  color: $color-gray-500;
+}
+
 .footer {
   height: 10rem;
   background-color: $color-gray-500;
